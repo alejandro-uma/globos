@@ -43,10 +43,16 @@ void setup()
 void draw()
 {
   background(0);
-  for(int i = 0; i < globos.size(); i++)
+  for (int i = globos.size() - 1; i >= 0; i--)
   {
-    globos.get(i).update();
-    globos.get(i).dibujate();
+    Globo g = globos.get(i);
+    g.update();
+    g.dibujate();
+
+    // Si desaparece por arriba, lo sacamos de la lista
+    if (g.y < -120) {
+      globos.remove(i);
+    }
   }
 }
 
