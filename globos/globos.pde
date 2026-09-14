@@ -21,6 +21,11 @@ class Globo
     ellipse(x, y, 80, 100);
     // Nudo inferior del globo
     triangle(x, y + 50, x - 8, y + 60, x + 8, y + 60);
+    
+    // Cuerda del globo
+    stroke(200);
+    line(x, y + 60, x, y + 110);
+    noStroke();
   }
 }
 
