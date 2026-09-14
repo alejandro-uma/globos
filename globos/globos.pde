@@ -19,6 +19,8 @@ class Globo
   {
     fill(255, 80, 80); // Modificación: color rojo para los globos
     ellipse(x, y, 80, 100);
+    // Nudo inferior del globo
+    triangle(x, y + 50, x - 8, y + 60, x + 8, y + 60);
   }
 }
 
