@@ -51,7 +51,7 @@ ArrayList<Globo> globos;
 
 void setup()
 {
-  size(640, 480);
+  size(1280, 720);
   globos = new ArrayList<Globo>();  
   
   // 2. Carga única en memoria (ajusta el nombre y extensión si difiere)
